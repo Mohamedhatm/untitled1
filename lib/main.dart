@@ -10,11 +10,17 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('First Application'),
-          backgroundColor: Color.fromARGB(255, 253, 238, 33),
+          title: Text('Birthday Card'),
         ),
-        body: Center(
-          child: Text('mohamed hatem  '),
+        body: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Center(
+              child: Image(image: AssetImage("images/552-1024x683.jpg")),
+            ),
+            Text("Birthday Happy !!"),
+          ],
         ),
       ),
     );
